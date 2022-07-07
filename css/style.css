@@ -268,7 +268,7 @@ border-radius: 3% 3% 0 0;
 .gridsiteitem h1{text-align: center;
 color: white;}
 .sectionheader{text-align: center; font-size: 2.5rem;}
-.sample{padding-top: 5rem;
+.sample{padding-top: 6rem;
 padding-bottom: 5rem;}
 @media screen and (max-width: 768px) {
   .pc {
