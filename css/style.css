@@ -1,0 +1,279 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.navigation {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  transition-duration: 1s;
+  z-index: 1000;
+}
+.navlist {
+  list-style: none;
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+}
+.navitem:first-child {
+  margin-right: auto;
+}
+.navitem {
+  padding: 1rem;
+  font-size: larger;
+}
+a {
+  text-decoration: none;
+}
+.navlink {
+  color: #bba14f;
+  font-size: 1.4rem;
+}
+.navlink:hover {
+  color: azure;
+  border-bottom: solid red 2px;
+  transition-duration: 0.7s;
+}
+.logo {
+  height: 6rem;
+}
+.home {
+  padding-top: 10rem;
+  background-image: url(/images/bg1.png);
+}
+.biglogo {
+  filter: grayscale(1);
+  margin: 0;
+  padding: 0;
+  width: 40%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.biglogo:hover {
+  filter: grayscale(0);
+  transition-duration: 1s;
+}
+.gridcontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 40%;
+  column-gap: 1rem;
+}
+.griditem {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  border-radius: 8%;
+  font-size: 1.4rem;
+}
+.griditem:hover {
+  background-color: #bba14f;
+  color: rgb(255, 255, 255);
+  transition-duration: 0.6s;
+}
+.wordCarousel {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  width: fit-content;
+}
+
+.words {
+  overflow: hidden;
+  position: relative;
+  float: right;
+  height: 65px;
+  padding-top: 10px;
+  margin-top: -10px;
+}
+.carouselitem {
+  font-family: Serif;
+  color: #bba14f;
+  font-weight: 700;
+  height: 45px;
+  margin-bottom: 45px;
+  display: block;
+}
+
+.flip2 {
+  animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip3 {
+  animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip4 {
+  animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+.flip5 {
+  animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+@keyframes flip2 {
+  0% {
+    margin-top: -180px;
+  }
+  5% {
+    margin-top: -90px;
+  }
+  50% {
+    margin-top: -90px;
+  }
+  55% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -180px;
+  }
+}
+
+@keyframes flip3 {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+@keyframes flip4 {
+  0% {
+    margin-top: -360px;
+  }
+  5% {
+    margin-top: -270px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  30% {
+    margin-top: -180px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  55% {
+    margin-top: -90px;
+  }
+  75% {
+    margin-top: -90px;
+  }
+  80% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -360px;
+  }
+}
+
+@keyframes flip5 {
+  0% {
+    margin-top: -450px;
+  }
+  5% {
+    margin-top: -360px;
+  }
+  20% {
+    margin-top: -360px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  40% {
+    margin-top: -270px;
+  }
+  45% {
+    margin-top: -180px;
+  }
+  60% {
+    margin-top: -180px;
+  }
+  65% {
+    margin-top: -90px;
+  }
+  80% {
+    margin-top: -90px;
+  }
+  85% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -450px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .mobile {
+    display: none;
+  }
+}
+.gridsite {
+  display: grid;
+  grid-template-columns: repeat(3, 25rem);
+justify-content: space-around;
+align-content: space-around;
+grid-row-gap: 2rem;
+}
+.gridsiteitem{background-color: #bba14f;
+width:100%;
+justify-content: center;
+align-items: center;
+border-radius: 3%;
+border: #bba14f 2px solid;
+}
+.gridsiteitem:hover{transform: scale(1.1);
+transition-duration: 0.7s;}
+.gridsiteitem img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+border-radius: 3% 3% 0 0;
+}
+.gridsiteitem h1{text-align: center;
+color: white;}
+.sectionheader{text-align: center; font-size: 2.5rem;}
+.sample{padding: 5rem;}
