@@ -474,7 +474,7 @@ a {
   }
   .card{height:22rem; transform:perspective(800px) rotateY(0deg);}
   .team{height: fit-content;}
-  .gridcontainer{margin-left: 30%; margin-right: 30%;}
+  .gridcontainer{margin-left: 30%; margin-right: 30%; width: 40%;}
 }
 @media screen and (min-width: 769px) {
   .mobile {
