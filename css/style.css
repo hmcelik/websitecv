@@ -471,7 +471,7 @@ a {
     grid-template-rows: auto;
     padding-bottom: 4rem;
   }
-  .card{height:22rem}
+  .card{height:22rem; transform:perspective(800px) rotateY(0deg);}
   .team{height: fit-content;}
 }
 @media screen and (min-width: 769px) {
