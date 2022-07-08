@@ -245,44 +245,90 @@ a {
 .gridsite {
   display: grid;
   grid-template-columns: repeat(3, 30%);
-justify-content: space-around;
-align-content: space-around;
-grid-row-gap: 2rem;
-width: 100%;
+  justify-content: space-around;
+  align-content: space-around;
+  grid-row-gap: 2rem;
+  width: 100%;
 }
-.gridsiteitem{background-color: #bba14f;
-width:100%;
-justify-content: center;
-align-items: center;
-border-radius: 3%;
-border: #bba14f 2px solid;
+.gridsiteitem {
+  background-color: #bba14f;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3%;
+  border: #bba14f 2px solid;
 }
-.gridsiteitem:hover{transform: scale(1.1);
-transition-duration: 0.7s;}
+.gridsiteitem:hover {
+  transform: scale(1.1);
+  transition-duration: 0.7s;
+}
 .gridsiteitem img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-border-radius: 3% 3% 0 0;
+  border-radius: 3% 3% 0 0;
 }
-.gridsiteitem h1{text-align: center;
-color: white;}
-.sectionheader{text-align: center; font-size: 2.5rem;}
-.sample{padding-top: 6rem;
-padding-bottom: 5rem;}
+.gridsiteitem h1 {
+  text-align: center;
+  color: white;
+}
+.sectionheader {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.sample {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+
+.team {
+  background-image: url(/images/bg2.png);
+  height: 50rem;
+}
+.teamcontainer {
+  grid-template-columns: repeat(4, 20%);
+  justify-content: space-around;
+  display: grid;
+  padding-top: 8rem;
+  row-gap: 3rem;
+}
+.teamitem {
+  background-color: #bba14f;
+  text-align: center;
+  position: relative;
+}
+.teamimage {
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .pc {
     display: none;
   }
-  .gridsite{
+  .gridsite {
     grid-template-columns: repeat(1, 80%);
   }
-  .navlink{font-size: 1rem;}
-  .navitem{padding: 0.5rem;}
-  .sectionheader{font-size: 2rem; width: 100%;}
-  .gridsite{width: 100%;}
-  .sample{padding-top: 3rem;
-  padding-bottom: 3rem;}
+  .navlink {
+    font-size: 1rem;
+  }
+  .navitem {
+    padding: 0.5rem;
+  }
+  .sectionheader {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .gridsite {
+    width: 100%;
+  }
+  .sample {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .teamcontainer {
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: auto;
+  }
 }
 @media screen and (min-width: 769px) {
   .mobile {
