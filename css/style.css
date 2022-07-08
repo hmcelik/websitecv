@@ -441,12 +441,12 @@ a {
 }
 @media screen and (max-width: 950px) {
   .card {
-    height: 17rem;
+    height: 16.5rem;
   }
 }
 @media screen and (max-width: 910px) {
   .card {
-    height: 15rem;
+    height: 14.5rem;
   }
   .card__description{font-size: 0.8rem;}
   .card__title{font-size: 0.7rem;}
@@ -455,7 +455,7 @@ a {
 
 @media screen and (max-width: 800px) {
   .card {
-    height: 14rem;
+    height: 13.5rem;
   }
   .card__description{font-size: 0.7rem;}
 }
