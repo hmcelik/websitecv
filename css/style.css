@@ -439,6 +439,9 @@ a {
   transform:perspective(800px) rotateY(25deg);
   transition:0.5s;
 }
+.buy{height: 100rem;}
+
+
 @media screen and (max-width: 768px) {
   .pc {
     display: none;
