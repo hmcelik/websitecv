@@ -282,13 +282,13 @@ a {
   padding-top: 6rem;
 }
 .sample {
-  padding-top: 6rem;
   padding-bottom: 5rem;
 }
 
 .team {
   background-image: url(/images/bg2.png);
   height: 50rem;
+  background-repeat: round;
 }
 .teamcontainer {
   grid-template-columns: repeat(4, 20%);
@@ -305,40 +305,7 @@ a {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .pc {
-    display: none;
-  }
-  .gridsite {
-    grid-template-columns: repeat(1, 80%);
-  }
-  .navlink {
-    font-size: 1rem;
-  }
-  .navitem {
-    padding: 0.5rem;
-  }
-  .sectionheader {
-    font-size: 2rem;
-    width: 100%;
-  }
-  .gridsite {
-    width: 100%;
-  }
-  .sample {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  .teamcontainer {
-    grid-template-columns: repeat(1, 80%);
-    grid-template-rows: auto;
-  }
-}
-@media screen and (min-width: 769px) {
-  .mobile {
-    display: none;
-  }
-}
+
 .card {
   position: relative;
   display: block;
@@ -460,6 +427,7 @@ a {
   .card__description{font-size: 0.7rem;}
 }
 
+
 .card:hover {
   transform:perspective(800px)       rotateY(0deg);
   opacity:1;
@@ -470,4 +438,41 @@ a {
   transform-origin:center;
   transform:perspective(800px) rotateY(25deg);
   transition:0.5s;
+}
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+  .gridsite {
+    grid-template-columns: repeat(1, 80%);
+  }
+  .navlink {
+    font-size: 1rem;
+  }
+  .navitem {
+    padding: 0.5rem;
+  }
+  .sectionheader {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .gridsite {
+    width: 100%;
+  }
+  .sample {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .teamcontainer {
+    grid-template-columns: repeat(1, 80%);
+    grid-template-rows: auto;
+    padding-bottom: 4rem;
+  }
+  .card{height:22rem}
+  .team{height: fit-content;}
+}
+@media screen and (min-width: 769px) {
+  .mobile {
+    display: none;
+  }
 }
