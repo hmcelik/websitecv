@@ -294,7 +294,7 @@ a {
 .card {
   position: relative;
   display: block;
-  height: 20rem;  
+  height: 20.5rem;  
   border-radius: calc(var(--curve) * 1px);
   overflow: hidden;
   text-decoration: none;
@@ -381,7 +381,11 @@ a {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-}    
+}  
+@media screen and (max-width: 1200px) {
+  .card {
+    height: 19.5rem;
+  }  }
 @media screen and (max-width: 1120px) {
   .card {
     height: 18rem;
@@ -622,6 +626,8 @@ html::-webkit-scrollbar-thumb {
   .gridsite {
     width: 100%;
   }
+  .biglogo{width: 60%;}
+  .home{padding-bottom: 6rem;}
   .sample {
     padding-top: 3rem;
     padding-bottom: 3rem;
